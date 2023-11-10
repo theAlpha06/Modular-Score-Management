@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import playerRoutes from './routes/playerRoutes.js';
 
 const app = express();
-mongoose.connect('mongodb://127.0.0.1:27017/modulePlayer', {
+mongoose.connect('mongodb+srv://thealpha06:thealpha06@cluster0.6xsrrev.mongodb.net/moduleplayer', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
