@@ -34,6 +34,7 @@ docker-compose down
 ```bash
 mongodb+srv://thealpha06:thealpha06@cluster0.6xsrrev.mongodb.net/moduleplayer
 ```
+NOTE: Although, this is not a good practise to public connection strings, we generally keep it in `.env` file.
 
 - If you don't have MongoDB Compass then just change the monguri in the `server.js` to one of the below address.
 ```bash
