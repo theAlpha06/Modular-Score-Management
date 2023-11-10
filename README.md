@@ -16,7 +16,7 @@ git clone https://github.com/theAlpha06/Modular-Score-Management
 ```
 
 ```bash
-cd modularPlayerScoreManagement
+cd Modular-Score-Management
 ```
 
 ### 2. Run Docker Images
@@ -28,3 +28,16 @@ docker-compose up
 ```bash
 docker-compose down
 ```
+
+### 4. Open MongoDB Compass and establish the connection.(You can also use terminal)
+
+### 5. Now you are ready to make requests. Below are the api endpoints.
+
+| Method | Endpoint                          | Request Body |
+|--------|-----------------------------------|--------------|
+| POST   | http://localhost:3000/players     | {"ID": "1","Name": "Shubham Singh","Country": "IN","Score": 100} |
+| PUT    | http://localhost:3000/players/:id | {"Name": "Sunny Singh","Score": 150}        |
+| DELETE | http://localhost:3000/players/:id | |
+| GET    | http://localhost:3000/players     |              |
+| GET    | http://localhost:3000/players/rank/:val| |
+| GET    | http://localhost:3000/players/random | |
