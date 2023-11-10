@@ -6,6 +6,7 @@ Follow these instructions to set up the Modular Player Score Management System o
 
 - Node.js and npm installed on your system.
 - Docker installed on your system.
+- MongoDB Compass(optional)
 
 ## Setup Steps
 
@@ -31,7 +32,15 @@ docker-compose down
 
 ### 4. Open MongoDB Compass and establish the connection.(You can also use terminal)
 
-### 5. Now you are ready to make requests. Below are the api endpoints.
+### 5. Use either of the connection string to connect to the local database.
+```bash
+mongodb://localhost:27017/modulePlayer
+``` 
+```bash
+mongodb://127.0.0.1:27017/modulePlayer
+```
+
+### 6. Now you are ready to make requests. Below are the api endpoints.
 
 | Method | Endpoint                          | Request Body |
 |--------|-----------------------------------|--------------|

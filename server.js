@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import playerRoutes from './routes/playerRoutes.js';
 
 const app = express();
-mongoose.connect('mongodb+srv://ravidemo3:ustime123@cluster0.6f3zkxn.mongodb.net/modularPlayer', {
+mongoose.connect('mongodb://127.0.0.1:27017/modulePlayer', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
