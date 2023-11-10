@@ -43,7 +43,7 @@ mongodb://127.0.0.1:27017/modulePlayer
 | Method | Endpoint                                | Request Body                                      | CURL Command                                           |
 |--------|-----------------------------------------|---------------------------------------------------|--------------------------------------------------------|
 | POST   | http://localhost:3000/players           | {"id": "1","name": "Shubham Singh","country": "IN","score": 100} | ```curl -X POST -H "Content-Type: application/json" -d '{"id": "1","name": "Shubham Singh","country": "IN","score": 100}' http://localhost:3000/players``` |
-| PUT    | http://localhost:3000/players/:id       | {"name": "Sunny Singh","score": 150}               | ```curl -X PUT -H "Content-Type: application/json" -d '{"Name": "Sunny Singh","score": 150}' http://localhost:3000/players/:id``` |
+| PUT    | http://localhost:3000/players/:id       | {"name": "Sunny Singh","score": 150}               | ```curl -X PUT -H "Content-Type: application/json" -d '{"name": "Sunny Singh","score": 150}' http://localhost:3000/players/:id``` |
 | DELETE | http://localhost:3000/players/:id       |                                                   | ```curl -X DELETE http://localhost:3000/players/:id``` |
 | GET    | http://localhost:3000/players           |                                                   | ```curl http://localhost:3000/players```                |
 | GET    | http://localhost:3000/players/rank/:val |                                                   | ```curl http://localhost:3000/players/rank/:val```      |
