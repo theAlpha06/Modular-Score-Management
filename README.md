@@ -1,6 +1,6 @@
 # [Setup Instructions](https://github.com/theAlpha06/Modular-Score-Management)
 
->Follow these instructions to set up the Modular Player Score Management System on your local machine using Node.js and Docker.
+Follow these instructions to set up the Modular Player Score Management System on your local machine using Node.js and Docker.
 
 ## Prerequisites
 
@@ -19,7 +19,12 @@ git clone https://github.com/theAlpha06/Modular-Score-Management
 cd modularPlayerScoreManagement
 ```
 
-### 2. Build and run Docker Images
+### 2. Run Docker Images
 ```bash
-docker-compose up --build
+docker-compose up
+```
+
+### 3. Stop the container
+```bash
+docker-compose down
 ```
