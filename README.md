@@ -40,11 +40,11 @@ mongodb://127.0.0.1:27017/modulePlayer
 
 ### 5. Now you are ready to make requests. Below are the api endpoints.
 
-| Method | Endpoint                          | Request Body |
-|--------|-----------------------------------|--------------|
-| POST   | http://localhost:3000/players     | {"ID": "1","Name": "Shubham Singh","Country": "IN","Score": 100} |
-| PUT    | http://localhost:3000/players/:id | {"Name": "Sunny Singh","Score": 150}        |
-| DELETE | http://localhost:3000/players/:id | |
-| GET    | http://localhost:3000/players     |              |
-| GET    | http://localhost:3000/players/rank/:val| |
-| GET    | http://localhost:3000/players/random | |
+| Method | Endpoint                                | Request Body                                      | CURL Command                                           |
+|--------|-----------------------------------------|---------------------------------------------------|--------------------------------------------------------|
+| POST   | http://localhost:3000/players           | {"ID": "1","Name": "Shubham Singh","Country": "IN","Score": 100} | ```curl -X POST -H "Content-Type: application/json" -d '{"ID": "1","Name": "Shubham Singh","Country": "IN","Score": 100}' http://localhost:3000/players``` |
+| PUT    | http://localhost:3000/players/:id       | {"Name": "Sunny Singh","Score": 150}               | ```curl -X PUT -H "Content-Type: application/json" -d '{"Name": "Sunny Singh","Score": 150}' http://localhost:3000/players/:id``` |
+| DELETE | http://localhost:3000/players/:id       |                                                   | ```curl -X DELETE http://localhost:3000/players/:id``` |
+| GET    | http://localhost:3000/players           |                                                   | ```curl http://localhost:3000/players```                |
+| GET    | http://localhost:3000/players/rank/:val |                                                   | ```curl http://localhost:3000/players/rank/:val```      |
+| GET    | http://localhost:3000/players/random    |                                                   | ```curl http://localhost:3000/players/random```         |
