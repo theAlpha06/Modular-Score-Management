@@ -30,9 +30,7 @@ docker-compose up
 docker-compose down
 ```
 
-### 4. Open MongoDB Compass and establish the connection.(You can also use terminal)
-
-### 5. Use either of the connection string to connect to the local database.
+### 4. Use either of the connection string to connect to the local database. You can also use MongoDB Compass for GUI.
 ```bash
 mongodb://localhost:27017/modulePlayer
 ``` 
@@ -40,7 +38,7 @@ mongodb://localhost:27017/modulePlayer
 mongodb://127.0.0.1:27017/modulePlayer
 ```
 
-### 6. Now you are ready to make requests. Below are the api endpoints.
+### 5. Now you are ready to make requests. Below are the api endpoints.
 
 | Method | Endpoint                          | Request Body |
 |--------|-----------------------------------|--------------|
